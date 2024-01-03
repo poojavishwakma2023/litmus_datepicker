@@ -1,0 +1,86 @@
+<!-- <ol>
+    <li *ngIf="animal">
+      You chose: <i>{{ <p>{{ data.name }}</p>
+        <p>{{ data.animal }}</p>}}</i>
+      <div>
+        <div>
+            <h4>View data by </h4>
+            <p>Request date</p>
+            <p>Response date</p>
+        </div>
+        <div>
+            <h4>Date presets </h4>
+            <p>Today</p>
+            <p>This Week</p>
+            <p>This Month</p>
+            <p>This Quarter</p>
+            <p>This Year</p>
+        </div>
+       
+    </div>
+    </li>
+  </ol> -->
+  <!-- <ol> -->
+    <!-- <li>
+      <mat-form-field>
+        <button mat-button (click)="openDialog()">Open Modal</button>
+      </mat-form-field>
+    </li> -->
+    <!-- <mat-dialog-actions>
+        <div>
+            <h4>View data by </h4>
+            <p>Request date</p>
+            <p>Response date</p>
+        </div>
+        <div>
+            <h4>Date presets </h4>
+            <p>Today</p>
+            <p>This Week</p>
+            <p>This Month</p>
+            <p>This Quarter</p>
+            <p>This Year</p>
+        </div>
+    </mat-dialog-actions> -->
+  
+  <!-- </ol> -->
+
+
+  HTML
+TS
+CSS
+dialog-overview-example-dialog.html
+<ol>
+  <li>
+    <mat-form-field>
+      <input matInput [(ngModel)]="name" placeholder="What's your name?">
+    </mat-form-field>
+  </li>
+  <li>
+    <button mat-raised-button (click)="openDialog()">Pick one</button>
+  </li>
+  <li *ngIf="animal">
+    You chose: <i>Animal</i>
+  </li>
+</ol>
+
+
+
+
+<!--  -->
+<h1 mat-dialog-title>Hi Data </h1>
+<div mat-dialog-content>
+  <p>What's your favorite animal?</p>
+  <mat-form-field>
+    <input matInput >
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button >No Thanks</button>
+  <button mat-button  cdkFocusInitial>Ok</button>
+</div>
+
+
+
+
+ 
+  
